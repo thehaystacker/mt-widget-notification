@@ -1,11 +1,21 @@
 import React from "react";
-import { faGem, faBell, faUser, faCompass } from "@fortawesome/free-regular-svg-icons";
+import { faGem, faUser, faCompass } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Notification from '../Notification'
+import Notification from "../Notification";
+import { connect } from "react-redux";
 
 import "./style.scss";
+import { fetchNotificationsAction, markAllReadAction } from "../../Store/Notifications/Action";
+import { useEffect } from "react";
 
-function Header() {
+function Header(props) {
+  const { notificationsData } = props;
+
+  useEffect(() => {
+    props.fetchNotifications();
+    // eslint-disable-next-line
+  }, []);
+
   return (
     <div className="wrap-header">
       <div className="left">
@@ -16,13 +26,20 @@ function Header() {
       <div className="right">
         <ul className="nav">
           <li>
-            <Notification />
+            {notificationsData ? (
+              <Notification
+                data={notificationsData}
+                theme="light"
+                variant="primary"
+                markAllRead={props.markAllRead}
+              />
+            ) : null}
           </li>
           <li>
-            <FontAwesomeIcon icon={faCompass}  className="ico" />
+            <FontAwesomeIcon icon={faCompass} className="ico" />
           </li>
           <li>
-            <FontAwesomeIcon icon={faUser}  className="ico" />
+            <FontAwesomeIcon icon={faUser} className="ico" />
           </li>
         </ul>
       </div>
@@ -30,4 +47,17 @@ function Header() {
   );
 }
 
-export default Header;
+const mapStateToProps = (state) => {
+  return {
+    notificationsData: state.alerts.notificationsData,
+  };
+};
+
+const mapDispatchToAction = (dispatch) => {
+  return {
+    fetchNotifications: () => dispatch(fetchNotificationsAction()),
+    markAllRead: () => dispatch(markAllReadAction()),
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToAction)(Header);

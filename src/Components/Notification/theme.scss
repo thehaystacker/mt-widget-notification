@@ -1,0 +1,225 @@
+// Primary
+.wrap-notif {
+  &.primary {
+    .wrap-ico {
+      .wrap-badge {
+        background-color: $primary;
+      }
+    }
+
+    .wrap-dropdown {
+      .header {
+        .ico-header {
+          &.bell {
+            color: $primary;
+          }
+        }
+      }
+
+      .footer {
+        a {
+          color: $primary;
+        }
+      }
+    }
+
+    .list {
+      .item {
+        &.unread {
+          background-color: rgba($primary, 0.05);
+        }
+      }
+    }
+  }
+}
+
+// Success
+.wrap-notif {
+  &.success {
+    .wrap-ico {
+      .wrap-badge {
+        background-color: $success;
+      }
+    }
+
+    .wrap-dropdown {
+      .header {
+        .ico-header {
+          &.bell {
+            color: $success;
+          }
+        }
+      }
+
+      .footer {
+        a {
+          color: $success;
+        }
+      }
+    }
+
+    .list {
+      .item {
+        &.unread {
+          background-color: rgba($success, 0.05);
+        }
+      }
+    }
+  }
+}
+
+// Warning
+.wrap-notif {
+  &.warning {
+    .wrap-ico {
+      .wrap-badge {
+        background-color: $warning;
+      }
+    }
+
+    .wrap-dropdown {
+      .header {
+        .ico-header {
+          &.bell {
+            color: $warning;
+          }
+        }
+      }
+
+      .footer {
+        a {
+          color: $warning;
+        }
+      }
+    }
+
+    .list {
+      .item {
+        &.unread {
+          background-color: rgba($warning, 0.05);
+        }
+      }
+    }
+  }
+}
+
+// Success
+.wrap-notif {
+  &.success {
+    .wrap-ico {
+      .wrap-badge {
+        background-color: $success;
+      }
+    }
+
+    .wrap-dropdown {
+      .header {
+        .ico-header {
+          &.bell {
+            color: $success;
+          }
+        }
+      }
+
+      .footer {
+        a {
+          color: $success;
+        }
+      }
+    }
+
+    .list {
+      .item {
+        &.unread {
+          background-color: rgba($success, 0.05);
+        }
+      }
+    }
+  }
+}
+
+// Danger
+.wrap-notif {
+  &.danger {
+    .wrap-ico {
+      .wrap-badge {
+        background-color: $danger;
+      }
+    }
+
+    .wrap-dropdown {
+      .header {
+        .ico-header {
+          &.bell {
+            color: $danger;
+          }
+        }
+      }
+
+      .footer {
+        a {
+          color: $danger;
+        }
+      }
+    }
+
+    .list {
+      .item {
+        &.unread {
+          background-color: rgba($danger, 0.05);
+        }
+      }
+    }
+  }
+}
+
+// .wrap-notif {
+//   .wrap-ico {
+//     .wrap-badge {
+//       background-color: $primary;
+//       color: $white;
+//     }
+//   }
+
+//   .wrap-dropdown {
+//     .list-box {
+//       background-color: $white;
+//       box-shadow: 0px 0px 10px 2px $light-grey;
+
+//       &::before {
+//         background-color: $white;
+//         box-shadow: 0px 0px 10px 2px $light-grey;
+//       }
+
+//       &::after {
+//         background-color: $white;
+//       }
+
+//       .header {
+//         .ico-header {
+//           &.bell {
+//             color: $primary;
+//           }
+//         }
+//       }
+
+//       .footer {
+//         a {
+//           color: $primary;
+//         }
+//       }
+//     }
+//   }
+
+//   .list {
+//     .item {
+//       &.unread {
+//         background-color: rgba($primary, 0.05);
+//       }
+
+//       .content {
+//         color: $dark-grey;
+//       }
+//     }
+//   }
+// }

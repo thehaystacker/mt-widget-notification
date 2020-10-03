@@ -1,0 +1,15 @@
+@import '../../Assets/scss/variables';
+
+.wrap-page-notifications {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+
+  .ico {
+    color: $primary;
+    font-size: 2em;
+    margin-bottom: 1em;
+  }
+}
