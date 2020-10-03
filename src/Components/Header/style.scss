@@ -1,0 +1,31 @@
+@import '../../Assets/scss/variables';
+
+.wrap-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+  border-bottom: 1px solid $light-grey;
+}
+
+.brand {
+  .ico {
+    font-size: 2em;
+    color: #4d63d5;
+  }
+}
+
+.right {
+  .nav {
+    display: flex;
+    justify-content: space-around;
+
+    li {
+      margin: 0 3em;
+
+      .ico {
+        font-size: 20px;
+        color: $dark-grey;
+      }
+    }
+  }
+}
