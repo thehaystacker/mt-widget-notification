@@ -24,9 +24,17 @@
     }
 
     .list {
+      a {
+        &:hover {
+          background-color: rgba($color: $primary, $alpha: 0.05);
+        }
+      }
+
       .item {
         &.unread {
-          background-color: rgba($primary, 0.05);
+          &::before {
+            background: $primary;
+          }
         }
       }
     }
@@ -59,9 +67,17 @@
     }
 
     .list {
+      a {
+        &:hover {
+          background-color: rgba($color: $success, $alpha: 0.05);
+        }
+      }
+
       .item {
         &.unread {
-          background-color: rgba($success, 0.05);
+          &::before {
+            background: $success;
+          }
         }
       }
     }
@@ -94,44 +110,17 @@
     }
 
     .list {
-      .item {
-        &.unread {
-          background-color: rgba($warning, 0.05);
+      a {
+        &:hover {
+          background-color: rgba($color: $warning, $alpha: 0.05);
         }
       }
-    }
-  }
-}
 
-// Success
-.wrap-notif {
-  &.success {
-    .wrap-ico {
-      .wrap-badge {
-        background-color: $success;
-      }
-    }
-
-    .wrap-dropdown {
-      .header {
-        .ico-header {
-          &.bell {
-            color: $success;
+      .item {
+        &.unread {
+          &::before {
+            background: $warning;
           }
-        }
-      }
-
-      .footer {
-        a {
-          color: $success;
-        }
-      }
-    }
-
-    .list {
-      .item {
-        &.unread {
-          background-color: rgba($success, 0.05);
         }
       }
     }
@@ -164,62 +153,60 @@
     }
 
     .list {
+      a {
+        &:hover {
+          background-color: rgba($color: $danger, $alpha: 0.05);
+        }
+      }
+
       .item {
         &.unread {
-          background-color: rgba($danger, 0.05);
+          &::before {
+            background: $danger;
+          }
         }
       }
     }
   }
 }
 
-// .wrap-notif {
-//   .wrap-ico {
-//     .wrap-badge {
-//       background-color: $primary;
-//       color: $white;
-//     }
-//   }
+.wrap-notif {
+  &.dark {
+    .wrap-dropdown {
+      .list-box {
+        color: $white;
+        background-color: $black;
+        box-shadow: 0px 0px 10px 2px $grey;
 
-//   .wrap-dropdown {
-//     .list-box {
-//       background-color: $white;
-//       box-shadow: 0px 0px 10px 2px $light-grey;
+        .header {
+          border-bottom: 1px solid $dark-grey;
+        }
 
-//       &::before {
-//         background-color: $white;
-//         box-shadow: 0px 0px 10px 2px $light-grey;
-//       }
+        .footer {
+          border-top: 1px solid $dark-grey;
+        }
 
-//       &::after {
-//         background-color: $white;
-//       }
+        &::before {
+          background-color: $black;
+          box-shadow: 0px 0px 10px 2px $grey;
+        }
 
-//       .header {
-//         .ico-header {
-//           &.bell {
-//             color: $primary;
-//           }
-//         }
-//       }
+        &::after {
+          background-color: $black;
+        }
+      }
+    }
 
-//       .footer {
-//         a {
-//           color: $primary;
-//         }
-//       }
-//     }
-//   }
+    .list {
+      a {
+        border-bottom: 1px solid $dark-grey;
+      }
 
-//   .list {
-//     .item {
-//       &.unread {
-//         background-color: rgba($primary, 0.05);
-//       }
-
-//       .content {
-//         color: $dark-grey;
-//       }
-//     }
-//   }
-// }
+      .item {
+        .content {
+          color: $white;
+        }
+      }
+    }
+  }
+}

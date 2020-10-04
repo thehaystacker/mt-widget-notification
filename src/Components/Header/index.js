@@ -27,10 +27,17 @@ function Header(props) {
         <ul className="nav">
           <li>
             {notificationsData ? (
+              /*
+              @params
+              @data: the API response data to be renedered (object)
+              @theme: dark || light (string)
+              @variant: primary || success || warning || danger (string)
+              @markAllRead: mark all notifications as read CTA (function)
+              */
               <Notification
                 data={notificationsData}
                 theme="light"
-                variant="primary"
+                variant="success"
                 markAllRead={props.markAllRead}
               />
             ) : null}

@@ -78,6 +78,7 @@
 
         .link-ico {
           cursor: pointer;
+
           &:hover {
             opacity: 0.5;
           }
@@ -94,8 +95,9 @@
           font-size: 0.83em;
           font-weight: bold;
           color: $primary;
+
           &:hover {
-            text-decoration: underline;
+            opacity: 0.8;
           }
         }
       }
@@ -130,14 +132,28 @@
       &:last-child {
         border: 0;
       }
+
+      &:hover {
+        background-color: rgba($color: $primary, $alpha: 0.05);
+      }
     }
 
     .item {
       padding: 0.8em 1em;
       display: flex;
+      position: relative;
 
       &.unread {
-        background-color: rgba($primary, 0.03);
+        &::before {
+          content: '';
+          position: absolute;
+          display: block;
+          background: $primary;
+          width: 4px;
+          height: 100%;
+          top: 0;
+          left: 0;
+        }
       }
 
       .prof-ico {
