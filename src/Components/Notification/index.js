@@ -39,7 +39,7 @@ function Notification(props) {
           {data.data ? (
             <div className="list">
               {Object.keys(data.data).map((id) => (
-                <a href={`/notifications/${id}`} target="_blank" rel="noopener noreferrer" key={id}>
+                <Link to={`/notifications/${id}`} target="_blank" rel="noopener noreferrer" key={id}>
                   <div
                     className={[
                       `item`,
@@ -59,15 +59,15 @@ function Notification(props) {
                       <p className="time">{data.data[id].created}</p>
                     </div>
                   </div>
-                </a>
+                </Link>
               ))}
             </div>
           ) : null}
 
           <div className="footer">
-            <a href="/notifications" target="_blank" rel="noopener noreferrer">
+            <Link to="/notifications" target="_blank" rel="noopener noreferrer">
               See all notifications
-            </a>
+            </Link>
           </div>
         </div>
         <div className="overlay" onClick={() => setOpen(false)}></div>

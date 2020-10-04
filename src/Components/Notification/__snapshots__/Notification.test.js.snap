@@ -126,11 +126,11 @@ exports[`Notification component should render without crashing 1`] = `
       <div
         className="list"
       >
-        <a
-          href="/notifications/1010"
+        <Link
           key="1010"
           rel="noopener noreferrer"
           target="_blank"
+          to="/notifications/1010"
         >
           <div
             className="item "
@@ -164,12 +164,12 @@ exports[`Notification component should render without crashing 1`] = `
               </p>
             </div>
           </div>
-        </a>
-        <a
-          href="/notifications/1011"
+        </Link>
+        <Link
           key="1011"
           rel="noopener noreferrer"
           target="_blank"
+          to="/notifications/1011"
         >
           <div
             className="item unread"
@@ -203,12 +203,12 @@ exports[`Notification component should render without crashing 1`] = `
               </p>
             </div>
           </div>
-        </a>
-        <a
-          href="/notifications/1012"
+        </Link>
+        <Link
           key="1012"
           rel="noopener noreferrer"
           target="_blank"
+          to="/notifications/1012"
         >
           <div
             className="item unread"
@@ -242,12 +242,12 @@ exports[`Notification component should render without crashing 1`] = `
               </p>
             </div>
           </div>
-        </a>
-        <a
-          href="/notifications/1013"
+        </Link>
+        <Link
           key="1013"
           rel="noopener noreferrer"
           target="_blank"
+          to="/notifications/1013"
         >
           <div
             className="item "
@@ -281,12 +281,12 @@ exports[`Notification component should render without crashing 1`] = `
               </p>
             </div>
           </div>
-        </a>
-        <a
-          href="/notifications/1014"
+        </Link>
+        <Link
           key="1014"
           rel="noopener noreferrer"
           target="_blank"
+          to="/notifications/1014"
         >
           <div
             className="item unread"
@@ -320,12 +320,12 @@ exports[`Notification component should render without crashing 1`] = `
               </p>
             </div>
           </div>
-        </a>
-        <a
-          href="/notifications/1015"
+        </Link>
+        <Link
           key="1015"
           rel="noopener noreferrer"
           target="_blank"
+          to="/notifications/1015"
         >
           <div
             className="item "
@@ -359,12 +359,12 @@ exports[`Notification component should render without crashing 1`] = `
               </p>
             </div>
           </div>
-        </a>
-        <a
-          href="/notifications/1016"
+        </Link>
+        <Link
           key="1016"
           rel="noopener noreferrer"
           target="_blank"
+          to="/notifications/1016"
         >
           <div
             className="item "
@@ -398,12 +398,12 @@ exports[`Notification component should render without crashing 1`] = `
               </p>
             </div>
           </div>
-        </a>
-        <a
-          href="/notifications/1017"
+        </Link>
+        <Link
           key="1017"
           rel="noopener noreferrer"
           target="_blank"
+          to="/notifications/1017"
         >
           <div
             className="item "
@@ -437,12 +437,12 @@ exports[`Notification component should render without crashing 1`] = `
               </p>
             </div>
           </div>
-        </a>
-        <a
-          href="/notifications/1018"
+        </Link>
+        <Link
           key="1018"
           rel="noopener noreferrer"
           target="_blank"
+          to="/notifications/1018"
         >
           <div
             className="item "
@@ -476,12 +476,12 @@ exports[`Notification component should render without crashing 1`] = `
               </p>
             </div>
           </div>
-        </a>
-        <a
-          href="/notifications/1019"
+        </Link>
+        <Link
           key="1019"
           rel="noopener noreferrer"
           target="_blank"
+          to="/notifications/1019"
         >
           <div
             className="item unread"
@@ -515,12 +515,12 @@ exports[`Notification component should render without crashing 1`] = `
               </p>
             </div>
           </div>
-        </a>
-        <a
-          href="/notifications/1020"
+        </Link>
+        <Link
           key="1020"
           rel="noopener noreferrer"
           target="_blank"
+          to="/notifications/1020"
         >
           <div
             className="item unread"
@@ -554,12 +554,12 @@ exports[`Notification component should render without crashing 1`] = `
               </p>
             </div>
           </div>
-        </a>
-        <a
-          href="/notifications/1021"
+        </Link>
+        <Link
           key="1021"
           rel="noopener noreferrer"
           target="_blank"
+          to="/notifications/1021"
         >
           <div
             className="item "
@@ -593,12 +593,12 @@ exports[`Notification component should render without crashing 1`] = `
               </p>
             </div>
           </div>
-        </a>
-        <a
-          href="/notifications/1022"
+        </Link>
+        <Link
           key="1022"
           rel="noopener noreferrer"
           target="_blank"
+          to="/notifications/1022"
         >
           <div
             className="item "
@@ -632,12 +632,12 @@ exports[`Notification component should render without crashing 1`] = `
               </p>
             </div>
           </div>
-        </a>
-        <a
-          href="/notifications/1023"
+        </Link>
+        <Link
           key="1023"
           rel="noopener noreferrer"
           target="_blank"
+          to="/notifications/1023"
         >
           <div
             className="item "
@@ -671,12 +671,12 @@ exports[`Notification component should render without crashing 1`] = `
               </p>
             </div>
           </div>
-        </a>
-        <a
-          href="/notifications/1024"
+        </Link>
+        <Link
           key="1024"
           rel="noopener noreferrer"
           target="_blank"
+          to="/notifications/1024"
         >
           <div
             className="item "
@@ -710,18 +710,18 @@ exports[`Notification component should render without crashing 1`] = `
               </p>
             </div>
           </div>
-        </a>
+        </Link>
       </div>
       <div
         className="footer"
       >
-        <a
-          href="/notifications"
+        <Link
           rel="noopener noreferrer"
           target="_blank"
+          to="/notifications"
         >
           See all notifications
-        </a>
+        </Link>
       </div>
     </div>
     <div
