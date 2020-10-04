@@ -4,7 +4,7 @@ import {
   fetchNotificationsSuccess,
 } from "./ActonTypes";
 
-import data from "./data";
+import data from "../../Components/Header/data";
 
 export const fetchNotificationsAction = () => async (dispatch) => {
   dispatch(fetchNotificationsLoading());

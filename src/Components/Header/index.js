@@ -1,7 +1,7 @@
 import React from "react";
 import { faGem, faUser, faCompass } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Notification from "../Notification";
+import Notification from "../../Widgets/Notification";
 import { connect } from "react-redux";
 
 import "./style.scss";
@@ -37,7 +37,7 @@ function Header(props) {
               <Notification
                 data={notificationsData}
                 theme="light"
-                variant="success"
+                variant="primary"
                 markAllRead={props.markAllRead}
               />
             ) : null}

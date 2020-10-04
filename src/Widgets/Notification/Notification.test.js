@@ -3,7 +3,7 @@ import { shallow } from "enzyme";
 import jest from "jest-mock";
 
 import Notification from "./index";
-import data from "../../Store/Notifications/data";
+import data from "../../Components/Header/data";
 
 describe("Notification", () => {
   it("component should render without crashing", () => {
